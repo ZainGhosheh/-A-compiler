@@ -1,0 +1,21 @@
+[BEGIN GLOBALS]
+main
+[END GLOBALS]
+[BEGIN <init> LOCALS]
+[END <init> LOCALS]
+fun_<init>: enter <init>
+lbl_0:      leave <init>
+[BEGIN main LOCALS]
+a (local var of 8 bytes)
+[END main LOCALS]
+main:       enter main
+            IFZ 1 GOTO lbl_2
+            setret 1
+            goto lbl_1
+            goto lbl_3
+lbl_2:      nop
+            [a] := 0
+lbl_3:      nop
+            setret 3
+            goto lbl_1
+lbl_1:      leave main

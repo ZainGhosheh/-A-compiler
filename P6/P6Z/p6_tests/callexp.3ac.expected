@@ -1,0 +1,45 @@
+[BEGIN GLOBALS]
+callee
+void_callee
+main
+[END GLOBALS]
+[BEGIN <init> LOCALS]
+[END <init> LOCALS]
+fun_<init>: enter <init>
+lbl_0:      leave <init>
+[BEGIN callee LOCALS]
+arg1 (formal arg of 8 bytes)
+arg2 (formal arg of 8 bytes)
+tmp0 (tmp var of 8 bytes)
+[END callee LOCALS]
+fun_callee: enter callee
+            getarg 1 [arg1]
+            getarg 2 [arg2]
+            [tmp0] := [arg1] ADD64 [arg2]
+            setret [tmp0]
+            goto lbl_1
+lbl_1:      leave callee
+[BEGIN void_callee LOCALS]
+arg (formal arg of 8 bytes)
+[END void_callee LOCALS]
+fun_void_callee: enter void_callee
+            getarg 1 [arg]
+            goto lbl_2
+lbl_2:      leave void_callee
+[BEGIN main LOCALS]
+a (local var of 8 bytes)
+tmp0 (tmp var of 8 bytes)
+tmp1 (tmp var of 8 bytes)
+[END main LOCALS]
+main:       enter main
+            setarg 1 3
+            setarg 2 4
+            call callee
+            getret [tmp0]
+            [a] := [tmp0]
+            setarg 1 5
+            setarg 2 6
+            call callee
+            setarg 1 1
+            call void_callee
+lbl_3:      leave main

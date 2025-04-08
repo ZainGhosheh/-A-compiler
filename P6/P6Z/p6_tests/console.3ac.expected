@@ -1,0 +1,23 @@
+[BEGIN GLOBALS]
+main
+str_0 "string"
+[END GLOBALS]
+[BEGIN <init> LOCALS]
+[END <init> LOCALS]
+fun_<init>: enter <init>
+lbl_0:      leave <init>
+[BEGIN main LOCALS]
+a (local var of 8 bytes)
+b (local var of 8 bytes)
+tmp0 (tmp var of 8 bytes)
+tmp1 (tmp var of 8 bytes)
+[END main LOCALS]
+main:       enter main
+            READ [a]
+            READ [b]
+            WRITE str_0
+            [tmp0] := [b] OR64 1
+            WRITE [tmp0]
+            [tmp1] := [a] ADD64 1203
+            WRITE [tmp1]
+lbl_1:      leave main

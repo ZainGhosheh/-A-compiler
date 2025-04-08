@@ -1,0 +1,19 @@
+[BEGIN GLOBALS]
+a
+b
+c
+d
+[END GLOBALS]
+[BEGIN <init> LOCALS]
+tmp0 (tmp var of 8 bytes)
+tmp1 (tmp var of 8 bytes)
+[END <init> LOCALS]
+fun_<init>: enter <init>
+            [tmp0] := 9 ADD64 10
+            [a] := [tmp0]
+            [b] := 10
+            call randBool
+            getret [tmp1]
+            [c] := [tmp1]
+            [d] := 0
+lbl_0:      leave <init>

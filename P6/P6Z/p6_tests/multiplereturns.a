@@ -1,0 +1,11 @@
+main : () -> int {
+  if (true) {
+    return 1;
+  }
+  else 
+  {
+    a:int = 0;
+  }
+
+  return 3;
+}

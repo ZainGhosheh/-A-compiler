@@ -1,0 +1,24 @@
+a:int;
+b:int;
+c:bool;
+d:bool;
+
+math_and_logic : () -> void {
+    mathResult:int;
+    boolResult:bool;
+
+    mathResult = a + b;
+    mathResult = mathResult - a;
+    mathResult = mathResult * b;
+    mathResult = mathResult / a;
+    mathResult = -mathResult;
+    mathResult++;
+    a--;
+
+    boolResult = c and (a >= b);
+    boolResult = boolResult or (a <= b);
+    boolResult = !boolResult;
+    boolResult = boolResult and (a == b);
+    boolResult = boolResult or (a != b);
+    boolResult = boolResult and a < b or b > a;
+}

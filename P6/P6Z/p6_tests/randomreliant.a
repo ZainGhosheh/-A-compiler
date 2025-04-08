@@ -1,0 +1,7 @@
+main : () -> void {
+  a:int;
+  maybe a means 8 otherwise 5;
+
+  b:bool;
+  b = eh?;
+}

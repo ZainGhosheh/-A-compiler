@@ -1,0 +1,16 @@
+exp 	:  exp DASH exp{$$ = std::get<int>($1) - std::get<int>($3);}
+		  |exp CROSS exp{$$ = std::get<int>($1) + std::get<int>($3);}
+		  |exp STAR exp{$$ = std::get<int>($1) * std::get<int>($3);}
+		  |exp SLASH exp{$$ = std::get<int>($1) / std::get<int>($3);}
+		  |exp AND exp{$$ = std::get<int>($1) && std::get<int>($3);}
+		  |exp OR exp{$$ = std::get<int>($1) || std::get<int>($3);}
+		  |exp EQUALS exp{$$ = std::get<int>($1) == std::get<int>($3);}
+		  |exp NOTEQUALS exp{$$ = std::get<int>($1) != std::get<int>($3);}
+		  |exp GREATER exp{$$ = std::get<int>($1) > std::get<int>($3);}
+		  |exp GREATEREQ exp{$$ = std::get<int>($1) >= std::get<int>($3);}
+		  |exp LESS exp{$$ = std::get<int>($1) < std::get<int>($3);}
+		  |exp LESSEQ exp{$$ = std::get<int>($1) <= std::get<int>($3);}
+
+		  |NOT exp{$$ = NotExp($2);}
+		  |DASH term{$$ = NegExp($2);}
+		  |term{$$ = $1;}

@@ -1,0 +1,13 @@
+callee : (arg1:int, arg2:int) -> int {
+  return arg1 + arg2;
+}
+
+void_callee : (arg:bool) -> void {
+  return;
+}
+
+main : () -> void {
+  a:int = callee(3, 4);
+  callee(5, 6);
+  void_callee(true);
+}

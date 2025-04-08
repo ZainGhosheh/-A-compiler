@@ -1,0 +1,66 @@
+[BEGIN GLOBALS]
+a
+b
+c
+d
+math_and_logic
+[END GLOBALS]
+[BEGIN <init> LOCALS]
+[END <init> LOCALS]
+fun_<init>: enter <init>
+lbl_0:      leave <init>
+[BEGIN math_and_logic LOCALS]
+mathResult (local var of 8 bytes)
+boolResult (local var of 8 bytes)
+tmp0 (tmp var of 8 bytes)
+tmp1 (tmp var of 8 bytes)
+tmp2 (tmp var of 8 bytes)
+tmp3 (tmp var of 8 bytes)
+tmp4 (tmp var of 8 bytes)
+tmp5 (tmp var of 8 bytes)
+tmp6 (tmp var of 8 bytes)
+tmp7 (tmp var of 8 bytes)
+tmp8 (tmp var of 8 bytes)
+tmp9 (tmp var of 8 bytes)
+tmp10 (tmp var of 8 bytes)
+tmp11 (tmp var of 8 bytes)
+tmp12 (tmp var of 8 bytes)
+tmp13 (tmp var of 8 bytes)
+tmp14 (tmp var of 8 bytes)
+tmp15 (tmp var of 8 bytes)
+tmp16 (tmp var of 8 bytes)
+tmp17 (tmp var of 8 bytes)
+[END math_and_logic LOCALS]
+fun_math_and_logic: enter math_and_logic
+            [tmp0] := [a] ADD64 [b]
+            [mathResult] := [tmp0]
+            [tmp1] := [mathResult] SUB64 [a]
+            [mathResult] := [tmp1]
+            [tmp2] := [mathResult] MULT64 [b]
+            [mathResult] := [tmp2]
+            [tmp3] := [mathResult] DIV64 [a]
+            [mathResult] := [tmp3]
+            [tmp4] := NEG64 [mathResult]
+            [mathResult] := [tmp4]
+            [mathResult] := [mathResult] ADD64 1
+            [a] := [a] SUB64 1
+            [tmp5] := [a] GTE64 [b]
+            [tmp6] := [c] AND64 [tmp5]
+            [boolResult] := [tmp6]
+            [tmp7] := [a] LTE64 [b]
+            [tmp8] := [boolResult] OR64 [tmp7]
+            [boolResult] := [tmp8]
+            [tmp9] := NOT64 [boolResult]
+            [boolResult] := [tmp9]
+            [tmp10] := [a] EQ64 [b]
+            [tmp11] := [boolResult] AND64 [tmp10]
+            [boolResult] := [tmp11]
+            [tmp12] := [a] NEQ64 [b]
+            [tmp13] := [boolResult] OR64 [tmp12]
+            [boolResult] := [tmp13]
+            [tmp14] := [a] LT64 [b]
+            [tmp15] := [boolResult] AND64 [tmp14]
+            [tmp16] := [b] GT64 [a]
+            [tmp17] := [tmp15] OR64 [tmp16]
+            [boolResult] := [tmp17]
+lbl_1:      leave math_and_logic

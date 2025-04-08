@@ -1,0 +1,11 @@
+main : () -> void {
+  a:int;
+  b:bool;
+
+  fromconsole a;
+  fromconsole b;
+
+  toconsole "string";
+  toconsole b or true;
+  toconsole a + 1203;
+}

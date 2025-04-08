@@ -1,0 +1,16 @@
+[BEGIN GLOBALS]
+func
+[END GLOBALS]
+[BEGIN <init> LOCALS]
+[END <init> LOCALS]
+fun_<init>: enter <init>
+lbl_0:      leave <init>
+[BEGIN func LOCALS]
+a (local var of 8 bytes)
+b (local var of 8 bytes)
+c (local var of 8 bytes)
+[END func LOCALS]
+fun_func:   enter func
+            [c] := [c] ADD64 1
+lbl_1:      leave func
+

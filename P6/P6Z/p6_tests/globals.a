@@ -1,0 +1,4 @@
+a:int = 9 + 10;
+b:int = 10;
+c:bool = eh?;
+d:bool = false;
