@@ -1,0 +1,11 @@
+*.d
+*.o
+ac
+*.hh
+*.cc
+*.output
+*.dot
+*.s
+.vscode
+*.out
+*.prog
