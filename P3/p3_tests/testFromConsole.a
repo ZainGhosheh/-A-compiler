@@ -1,0 +1,4 @@
+a : () -> int {
+    fromconsole x;
+    return x;
+}

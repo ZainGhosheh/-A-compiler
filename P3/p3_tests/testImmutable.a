@@ -1,0 +1,7 @@
+a : immutable int;
+
+b : () -> void {
+    x: immutable int = 1;
+    y: immutable CLASSTYPE;
+    return;
+}

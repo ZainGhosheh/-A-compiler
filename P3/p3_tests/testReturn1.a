@@ -1,0 +1,11 @@
+a : () -> int {
+	return 1;
+}
+
+b : () -> void {
+    x: int;
+    x = 1;
+    x = 2;
+    n: int = 1;
+	return;
+}

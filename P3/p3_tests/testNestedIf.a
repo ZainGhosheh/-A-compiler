@@ -1,0 +1,19 @@
+a : () -> int {
+    if (true) {
+        if (false) {
+            return 1;
+        } else {
+            return 2;
+        }
+    } else {
+        return 3;
+    }
+
+    if (false) {
+        if (true) {
+            if (false) {
+            }
+        }
+        return 4;
+    }
+}

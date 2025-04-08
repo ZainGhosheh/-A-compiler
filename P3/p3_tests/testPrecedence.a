@@ -1,0 +1,29 @@
+a : () -> int {
+    x: int = 1;
+    y: int = 2;
+	return x + y * 2;
+}
+
+b : () -> int {
+    x: int = 1;
+    y: int = 2;
+	return x + (y * 2);
+}
+
+c : () -> int {
+    x: int = 1;
+    y: int = 2;
+	return (x + y * 0) * 2;
+}
+
+d : () -> int {
+    x: int = 1;
+    y: int = 2;
+	return x + -y;
+}
+
+e : () -> int {
+    x: int = 1;
+    y: int = 2;
+	return x + ((!y) and true);
+}

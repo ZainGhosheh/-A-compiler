@@ -1,0 +1,8 @@
+a : () -> int {
+    if (eh?) {
+        return 1;
+    }
+    else {
+        return 2;
+    }
+}

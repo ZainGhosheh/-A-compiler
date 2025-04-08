@@ -1,0 +1,9 @@
+a : () -> int {
+    while (true) {
+        while (false) {
+            while (true) {
+                return 1;
+            }
+        }
+    }
+}

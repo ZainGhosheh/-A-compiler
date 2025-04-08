@@ -1,0 +1,20 @@
+m: custom {
+    x: int;
+    y: int;
+    z: int = 1;
+    f : () -> void {
+        a: int;
+        b: int;
+        while (true) {
+            while (false) {
+                while (true) {
+                    return;
+                }
+            }
+        }
+        if (true) {
+            if (false) {
+            }
+        }
+    }
+};

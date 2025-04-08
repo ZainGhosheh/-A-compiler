@@ -1,0 +1,6 @@
+
+a : () -> void {
+    if (x > 1) {
+        x: SomeClass;
+    }
+}

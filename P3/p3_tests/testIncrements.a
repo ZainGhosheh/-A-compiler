@@ -1,0 +1,6 @@
+a : () -> void {
+    x: int = 0;
+    x++;
+    x--;
+    return;
+}

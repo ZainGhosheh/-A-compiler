@@ -1,0 +1,4 @@
+main : () -> int {
+    maybe (4+1) means (3-1) otherwise 3+2;
+    maybe x means y otherwise z;
+}

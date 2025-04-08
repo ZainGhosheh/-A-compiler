@@ -1,0 +1,4 @@
+a : () -> void {
+    toconsole "Hello, World!";
+    return;
+}

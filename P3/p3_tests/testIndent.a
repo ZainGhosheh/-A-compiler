@@ -1,0 +1,15 @@
+m: custom {
+    x: int;
+    y: int;
+    z: int = 1;
+    f : () -> void {
+        a: int;
+        b: int;
+    }
+};
+
+w: custom {
+    x: int;
+    y: int;
+    z: int = 1;
+};

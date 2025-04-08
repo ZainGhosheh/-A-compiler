@@ -1,0 +1,71 @@
+a : () -> int {
+    x: int = 1;
+    y: int = 2;
+	return x + y;
+}
+
+b : () -> int {
+    x: int = 1;
+    y: int = 2;
+	return x - y;
+}
+
+c : () -> int {
+    x: int = 1;
+    y: int = 2;
+	return x * y;
+}
+
+d : () -> int {
+    x: int = 1;
+    y: int = 2;
+	return x / y;
+}
+
+e : () -> bool {
+    x: int = 1;
+    y: int = 2;
+	return x > y;
+}
+
+f : () -> bool {
+    x: int = 1;
+    y: int = 2;
+	return x < y;
+}
+
+g : () -> bool {
+    x: int = 1;
+    y: int = 2;
+	return x >= y;
+}
+
+h : () -> bool {
+    x: int = 1;
+    y: int = 2;
+	return x <= y;
+}
+
+i : () -> bool {
+    x: int = 1;
+    y: int = 2;
+	return x == y;
+}
+
+j : () -> bool {
+    x: int = 1;
+    y: int = 2;
+	return x != y;
+}
+
+k : () -> bool {
+    x: bool = true;
+    y: bool = false;
+	return x and y;
+}
+
+l : () -> bool {
+    x: bool = true;
+    y: bool = false;
+	return x or y;
+}

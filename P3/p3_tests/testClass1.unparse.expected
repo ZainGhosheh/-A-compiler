@@ -1,0 +1,7 @@
+m: custom {
+    x: int;
+    f : () -> void {
+        a: int;
+        b: int;
+    }
+};

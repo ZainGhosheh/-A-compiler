@@ -1,0 +1,13 @@
+a : () -> int {
+    return 1;
+}
+
+b : (x: int, y: bool, z: int) -> int {
+    return a(x);
+}
+
+main : () -> int {
+    b(1, true, 2);
+    a();
+    return b(1, true, 2);
+}

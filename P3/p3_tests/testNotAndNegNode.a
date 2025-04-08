@@ -1,0 +1,9 @@
+a : () -> bool {
+    x: bool = true;
+	return !x;
+}
+
+b : () -> int {
+    x: int = 1;
+	return -x;
+}
