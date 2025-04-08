@@ -1,0 +1,291 @@
+a : () -> int {
+    x: int = 1;
+    y: int = 2;
+	return x + y;
+}
+
+b : () -> int {
+    x: int = 1;
+    y: int = 2;
+	return x - y;
+}
+
+c : () -> int {
+    x: int = 1;
+    y: int = 2;
+	return x * y;
+}
+
+d : () -> int {
+    x: int = 1;
+    y: int = 2;
+	return x / y;
+}
+
+e : () -> bool {
+    x: int = 1;
+    y: int = 2;
+	return x > y;
+}
+
+f : () -> bool {
+    x: int = 1;
+    y: int = 2;
+	return x < y;
+}
+
+g : () -> bool {
+    x: int = 1;
+    y: int = 2;
+	return x >= y;
+}
+
+h : () -> bool {
+    x: int = 1;
+    y: int = 2;
+	return x <= y;
+}
+
+i : () -> bool {
+    x: int = 1;
+    y: int = 2;
+	return x == y;
+}
+
+j : () -> bool {
+    x: int = 1;
+    y: int = 2;
+	return x != y;
+}
+
+k : () -> bool {
+    x: bool = true;
+    y: bool = false;
+	return x and y;
+}
+
+l : () -> bool {
+    x: bool = true;
+    y: bool = false;
+	return x or y;
+}
+
+ll : () -> bool {
+    x: bool = true;
+	return x;
+}
+lll : () -> int {
+    return 1;
+}
+
+llll : (x: int, y: bool, z: int) -> int {
+    return a(x);
+}
+
+main : () -> int {
+    b(1, true, 2);
+    a();
+    return b(1, true, 2);
+}
+mmm: custom {
+    x: int;
+    y: int;
+    z: int = 1;
+    f : () -> void {
+        a: int;
+        b: int;
+        while (true) {
+            while (false) {
+                while (true) {
+                    return;
+                }
+            }
+        }
+        if (true) {
+            if (false) {
+            }
+        }
+    }
+};
+
+SomeClass: custom {
+
+};
+adfa : () -> void {
+    x:int = 2;
+    if (x > 1) {
+        x: SomeClass;
+    }
+}
+adsfd : () -> void {
+    toconsole "Hello, World!";
+    return;
+}
+dsfsdfdsfa : () -> int {
+    if (eh?) {
+        return 1;
+    }
+    else {
+        return 2;
+    }
+}
+
+asdfsd : (x: int, y: int, z: bool) -> void {
+    if (x > 1) {
+        x: SomeClass;
+    }
+}
+asasdwer : () -> int {
+    x: int = 0;
+    fromconsole x;
+    return x;
+}
+aqwer : () -> void {
+}
+global1: int;
+global233: int;
+aasdfdsf1121 : () -> int {
+    if (1) {
+        return 1;
+    } else {
+        return 2;
+    }
+}
+
+qwerwerqq : immutable int;
+
+bqwerewrq : () -> void {
+    x: immutable int = 1;
+    y: immutable SomeClass;
+    return;
+}
+
+aqwerewqr : () -> void {
+    x: int = 0;
+    x++;
+    x--;
+    return;
+}
+
+
+mqwereewq: custom {
+    x: int;
+    y: int;
+    z: int = 1;
+    f : () -> void {
+        a: int;
+        b: int;
+    }
+};
+
+wqweqrwqr: custom {
+    x: int;
+    y: int;
+    z: int = 1;
+};
+
+
+
+main2 : () -> int {
+    #maybe (4+1) means (3-1) otherwise 3+2;
+    #maybe x means y otherwise z; TODO
+}
+
+cafsdf : custom {
+    x: int;
+    y: int;
+    z: int = 1;
+};
+
+aafdbvcc : () -> int {
+    c: cafsdf;
+    c->x = 1;
+    return c->x;
+}
+azxcvzxcvzda : () -> int {
+    if (true) {
+        if (false) {
+            return 1;
+        } else {
+            return 2;
+        }
+    } else {
+        return 3;
+    }
+
+    if (false) {
+        if (true) {
+            if (false) {
+            }
+        }
+        return 4;
+    }
+}
+asadfsghh : () -> int {
+    while (true) {
+        while (false) {
+            while (true) {
+                return 1;
+            }
+        }
+    }
+}
+afhdhhhhh : () -> bool {
+    x: bool = true;
+	return !x;
+}
+
+bhhhdf : () -> int {
+    x: int = 1;
+	return -x;
+}
+afdfgertrt : () -> int {
+    x: int = 1;
+    y: int = 2;
+	return x + y * 2;
+}
+
+breterrter : () -> int {
+    x: int = 1;
+    y: int = 2;
+	return x + (y * 2);
+}
+
+certretqqq : () -> int {
+    x: int = 1;
+    y: int = 2;
+	return (x + y * 0) * 2;
+}
+
+dqqqwerq : () -> int {
+    x: int = 1;
+    y: int = 2;
+	return x + -y;
+}
+
+endgfhgdf : () -> int {
+    x: int = 1;
+    y: int = 2;
+	return x + ((!y) and true);
+}
+main3 : () -> int {
+    a: &int;
+    #b: &a; TODO
+}
+a32423gaf : () -> int {
+	return 1;
+}
+
+badsbvx : () -> void {
+    x: int;
+    x = 1;
+    x = 2;
+    n: int = 1;
+	return;
+}
+aafgbvx : () -> void {
+	x: int = 0;
+    while (x == 1) {
+		a = 1;
+	}
+}

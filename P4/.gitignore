@@ -1,0 +1,10 @@
+ac
+*.d
+*.o
+*.cc
+*.output
+*.dot
+*.hh
+*.out
+*.err
+settings.json

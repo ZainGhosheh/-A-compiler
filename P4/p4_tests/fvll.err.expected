@@ -1,0 +1,17 @@
+FATAL [4,5]-[4,6]: Multiply declared identifier
+FATAL [10,5]-[10,6]: Multiply declared identifier
+FATAL [16,12]-[16,13]: Undeclared identifier
+FATAL [21,12]-[21,13]: Undeclared identifier
+FATAL [30,6]-[30,11]: Invalid type in declaration
+FATAL [35,5]-[35,6]: Invalid type in declaration
+FATAL [39,1]-[39,2]: Multiply declared identifier
+FATAL [43,1]-[46,3]: Multiply declared identifier
+FATAL [50,5]-[50,6]: Invalid type in declaration
+FATAL [60,10]-[60,13]: Invalid type in declaration
+FATAL [63,9]-[63,10]: Undeclared identifier
+FATAL [64,8]-[64,11]: Invalid type in declaration
+FATAL [65,5]-[65,6]: Undeclared identifier
+FATAL [67,5]-[67,6]: Invalid type in declaration
+FATAL [75,9]-[75,10]: Invalid type in declaration
+FATAL [76,5]-[76,6]: Invalid type in declaration
+ToDoError: implement me

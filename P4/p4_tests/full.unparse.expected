@@ -1,0 +1,252 @@
+a{()->int} : () -> int {
+    x{int} : int = 1;
+    y{int} : int = 2;
+    return x{int} + y{int};
+}
+b{()->int} : () -> int {
+    x{int} : int = 1;
+    y{int} : int = 2;
+    return x{int} - y{int};
+}
+c{()->int} : () -> int {
+    x{int} : int = 1;
+    y{int} : int = 2;
+    return x{int} * y{int};
+}
+d{()->int} : () -> int {
+    x{int} : int = 1;
+    y{int} : int = 2;
+    return x{int} / y{int};
+}
+e{()->bool} : () -> bool {
+    x{int} : int = 1;
+    y{int} : int = 2;
+    return x{int} > y{int};
+}
+f{()->bool} : () -> bool {
+    x{int} : int = 1;
+    y{int} : int = 2;
+    return x{int} < y{int};
+}
+g{()->bool} : () -> bool {
+    x{int} : int = 1;
+    y{int} : int = 2;
+    return x{int} >= y{int};
+}
+h{()->bool} : () -> bool {
+    x{int} : int = 1;
+    y{int} : int = 2;
+    return x{int} <= y{int};
+}
+i{()->bool} : () -> bool {
+    x{int} : int = 1;
+    y{int} : int = 2;
+    return x{int} == y{int};
+}
+j{()->bool} : () -> bool {
+    x{int} : int = 1;
+    y{int} : int = 2;
+    return x{int} != y{int};
+}
+k{()->bool} : () -> bool {
+    x{bool} : bool = true;
+    y{bool} : bool = false;
+    return x{bool} and y{bool};
+}
+l{()->bool} : () -> bool {
+    x{bool} : bool = true;
+    y{bool} : bool = false;
+    return x{bool} or y{bool};
+}
+ll{()->bool} : () -> bool {
+    x{bool} : bool = true;
+    return x{bool};
+}
+lll{()->int} : () -> int {
+    return 1;
+}
+llll{(int, bool, int)->int} : (x{int} : int, y{bool} : bool, z{int} : int) -> int {
+    return a{()->int}(x{int});
+}
+main{()->int} : () -> int {
+    b{()->int}(1, true, 2);
+    a{()->int}();
+    return b{()->int}(1, true, 2);
+}
+mmm{mmm} : custom {
+    x{int} : int;
+    y{int} : int;
+    z{int} : int = 1;
+    f{()->void} : () -> void {
+        a{int} : int;
+        b{int} : int;
+        while (true){
+            while (false){
+                while (true){
+                    return;
+                }
+            }
+        }
+        if (true){
+            if (false){
+            }
+        }
+    }
+};
+SomeClass{SomeClass} : custom {
+};
+adfa{()->void} : () -> void {
+    x{int} : int = 2;
+    if (x{int} > 1){
+        x{SomeClass} : SomeClass{SomeClass};
+    }
+}
+adsfd{()->void} : () -> void {
+    toconsole "Hello, World!";
+    return;
+}
+dsfsdfdsfa{()->int} : () -> int {
+    if (eh?){
+        return 1;
+    } else {
+        return 2;
+    }
+}
+asdfsd{(int, int, bool)->void} : (x{int} : int, y{int} : int, z{bool} : bool) -> void {
+    if (x{int} > 1){
+        x{SomeClass} : SomeClass{SomeClass};
+    }
+}
+asasdwer{()->int} : () -> int {
+    x{int} : int = 0;
+    fromconsole x{int};
+    return x{int};
+}
+aqwer{()->void} : () -> void {
+}
+global1{int} : int;
+global233{int} : int;
+aasdfdsf1121{()->int} : () -> int {
+    if (1){
+        return 1;
+    } else {
+        return 2;
+    }
+}
+qwerwerqq{immutable int} : immutable int;
+bqwerewrq{()->void} : () -> void {
+    x{immutable int} : immutable int = 1;
+    y{immutable SomeClass} : immutable SomeClass{SomeClass};
+    return;
+}
+aqwerewqr{()->void} : () -> void {
+    x{int} : int = 0;
+    x{int}++;
+    x{int}--;
+    return;
+}
+mqwereewq{mqwereewq} : custom {
+    x{int} : int;
+    y{int} : int;
+    z{int} : int = 1;
+    f{()->void} : () -> void {
+        a{int} : int;
+        b{int} : int;
+    }
+};
+wqweqrwqr{wqweqrwqr} : custom {
+    x{int} : int;
+    y{int} : int;
+    z{int} : int = 1;
+};
+main2{()->int} : () -> int {
+}
+cafsdf{cafsdf} : custom {
+    x{int} : int;
+    y{int} : int;
+    z{int} : int = 1;
+};
+aafdbvcc{()->int} : () -> int {
+    c{cafsdf} : cafsdf{cafsdf};
+    c{cafsdf}->x{int} = 1;
+    return c{cafsdf}->x{int};
+}
+azxcvzxcvzda{()->int} : () -> int {
+    if (true){
+        if (false){
+            return 1;
+        } else {
+            return 2;
+        }
+    } else {
+        return 3;
+    }
+    if (false){
+        if (true){
+            if (false){
+            }
+        }
+        return 4;
+    }
+}
+asadfsghh{()->int} : () -> int {
+    while (true){
+        while (false){
+            while (true){
+                return 1;
+            }
+        }
+    }
+}
+afhdhhhhh{()->bool} : () -> bool {
+    x{bool} : bool = true;
+    return !x{bool};
+}
+bhhhdf{()->int} : () -> int {
+    x{int} : int = 1;
+    return -x{int};
+}
+afdfgertrt{()->int} : () -> int {
+    x{int} : int = 1;
+    y{int} : int = 2;
+    return x{int} + (y{int} * 2);
+}
+breterrter{()->int} : () -> int {
+    x{int} : int = 1;
+    y{int} : int = 2;
+    return x{int} + (y{int} * 2);
+}
+certretqqq{()->int} : () -> int {
+    x{int} : int = 1;
+    y{int} : int = 2;
+    return (x{int} + (y{int} * 0)) * 2;
+}
+dqqqwerq{()->int} : () -> int {
+    x{int} : int = 1;
+    y{int} : int = 2;
+    return x{int} + (-y{int});
+}
+endgfhgdf{()->int} : () -> int {
+    x{int} : int = 1;
+    y{int} : int = 2;
+    return x{int} + ((!y{int}) and true);
+}
+main3{()->int} : () -> int {
+    a{& int} : & int;
+}
+a32423gaf{()->int} : () -> int {
+    return 1;
+}
+badsbvx{()->void} : () -> void {
+    x{int} : int;
+    x{int} = 1;
+    x{int} = 2;
+    n{int} : int = 1;
+    return;
+}
+aafgbvx{()->void} : () -> void {
+    x{int} : int = 0;
+    while (x{int} == 1){
+        a{()->int} = 1;
+    }
+}

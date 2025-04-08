@@ -1,0 +1,79 @@
+# Multiply declared identifier
+a : () -> int {
+    x: int = 1;
+    x: int = 2; # Error: Multiply declared identifier
+    return x;
+}
+
+d : () -> int {
+    y: int = 3;
+    y: int = 4; # Error: Multiply declared identifier
+    return y;
+}
+
+# Undeclared identifier
+b : () -> int {
+    return y; # Error: Undeclared identifier 'y'
+}
+
+e : () -> int {
+    z: int = 5;
+    return w; # Error: Undeclared identifier 'w'
+}
+
+# Invalid type in declaration
+c : () -> void { # Error: Invalid type in declaration
+    x: int = 1;
+    return;
+}
+
+f : (param: void) -> int { # Error: Invalid type in declaration
+    return 0;
+}
+
+g : () -> int {
+    h: void; # Error: Invalid type in declaration
+    return 0;
+}
+
+g : () -> int { # redefine function
+    return 0;
+}
+
+c : custom {
+    x: int;
+    #y: string;
+};
+
+c22 : custom {
+    x: int;
+    y: void;
+    #y: string;
+};
+
+c23 : custom {
+    x: int;
+    #y: string;
+};
+
+hello : () -> int {
+    jjj: c22;
+    kk: c23;
+    kk->x = 1;
+    kk->z = 1; # does not exist
+    k: c24; # both class and member does not exist
+    k->e = 2;
+    x: immutable int;
+    z: immutable void;
+    return 0;
+}
+
+hello2 : () -> int {
+    a: &int;
+    #c: immutable a;
+    b: &c23; # correct
+    c: &a; # not allowed
+    c: &void; # TODO
+    maybe c means 4 otherwise 5;
+    return 0;
+}
