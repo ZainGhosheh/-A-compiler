@@ -1,0 +1,46 @@
+f : (test1:bool, t2: bool) -> int {
+    a:int = -1;
+
+    postInc: bool;
+    a = 5 / postInc;    # should this get invalid assignment?x`
+    if (true == 5) {}    # should this get condition error?
+    postInc++;
+
+    if (!postInc) {}
+    if(a) {
+    }
+    boo: bool = false;
+    return;        # non void return
+}
+
+func : () -> bool {
+    one: int;
+    two: bool;
+    return one != two;
+}
+
+otherFunc: () -> void {
+    myI: int = 1;
+    myBoo: bool = true;
+    myI = myBoo;
+}
+x: custom {
+    xMethod : () -> void {
+        return 0;
+    }
+};
+main : () -> int {
+    a:int;
+    callArg: int;
+    otherFunc();
+    myX:x;
+    
+    a();        # non func call
+    f(a, callArg);
+    f = otherFunc;        # func assign to each other
+    toconsole myX;        # output class
+    toconsole otherFunc();        
+    fromconsole x;
+    fromconsole f;
+    return 0;
+}

@@ -1,0 +1,11 @@
+a : () -> int {
+	return 1;
+}
+
+z : () -> void {
+}
+
+f : () -> void {
+	toconsole a();
+	toconsole z(); # error
+}

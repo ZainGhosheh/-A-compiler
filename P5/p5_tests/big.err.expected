@@ -1,0 +1,18 @@
+FATAL [5,13]-[5,20]: Arithmetic operator applied to invalid operand
+FATAL [6,9]-[6,18]: Invalid equality operation
+FATAL [6,5]-[6,22]: Non-bool expression used as a condition
+FATAL [7,5]-[7,14]: Arithmetic operator applied to invalid operand
+FATAL [10,5]-[11,6]: Non-bool expression used as a condition
+FATAL [13,5]-[13,11]: Missing return value
+FATAL [19,12]-[19,22]: Invalid equality operation
+FATAL [25,5]-[25,16]: Invalid assignment operation
+FATAL [29,9]-[29,17]: Return with a value in void function
+FATAL [38,5]-[38,8]: Attempt to call a non-function
+FATAL [39,7]-[39,8]: Type of actual does not match type of formal
+FATAL [39,10]-[39,17]: Type of actual does not match type of formal
+FATAL [40,5]-[40,18]: Invalid assignment operand
+FATAL [41,5]-[41,18]: Attempt to output a class
+FATAL [42,5]-[42,26]: Attempt to output void
+FATAL [43,5]-[43,18]: Attempt to assign user input to class
+FATAL [44,5]-[44,18]: Attempt to assign user input to function
+Type Analysis Failed

@@ -1,0 +1,4 @@
+f : () -> int {
+    b : immutable int = 3;
+	b = 4;
+}

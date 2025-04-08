@@ -1,0 +1,6 @@
+m : custom {
+};
+
+f : () -> void {
+	toconsole m;
+}

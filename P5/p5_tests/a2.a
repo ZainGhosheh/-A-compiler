@@ -1,0 +1,18 @@
+A: custom {
+    a: int = 5;
+};
+B: custom  {
+
+};
+
+main : () -> int {
+
+    myA: A;
+    a: immutable int;
+    maybe a means 1 otherwise 2;
+    a = 2;
+    a++;
+    fromconsole myA->a;
+    fromconsole A;
+    myA = A;
+}

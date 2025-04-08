@@ -1,0 +1,12 @@
+*.d
+*.o
+*.cc
+*.output
+*.hh
+ac
+parser.dot
+parser.png
+*.out
+*.err
+.DS_Store
+.vscode

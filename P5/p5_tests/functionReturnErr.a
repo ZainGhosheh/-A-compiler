@@ -1,0 +1,5 @@
+f : () -> void {
+	a:int;
+	a = 4;
+    return a;
+}

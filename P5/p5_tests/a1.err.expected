@@ -1,0 +1,29 @@
+FATAL [5,13]-[5,20]: Arithmetic operator applied to invalid operand
+FATAL [6,9]-[6,18]: Invalid equality operation
+FATAL [6,5]-[6,22]: Non-bool expression used as a condition
+FATAL [7,2]-[7,9]: Arithmetic operator applied to invalid operand
+FATAL [9,2]-[9,3]: Non-lval assignment
+FATAL [11,5]-[11,6]: Non-bool expression used as a condition
+FATAL [13,9]-[13,10]: Non-bool expression used as a condition
+FATAL [15,2]-[15,8]: Missing return value
+FATAL [21,9]-[21,19]: Invalid equality operation
+FATAL [30,5]-[30,20]: Invalid assignment operation
+FATAL [32,5]-[32,16]: Invalid assignment operation
+FATAL [38,10]-[38,11]: Return with a value in void function
+FATAL [50,2]-[50,3]: Attempt to call a non-function
+FATAL [51,10]-[51,17]: Attempt to call a non-function
+FATAL [52,10]-[52,14]: Function call with wrong number of args
+FATAL [52,6]-[52,7]: Arithmetic operator applied to invalid operand
+FATAL [52,2]-[52,20]: Invalid assignment operand
+FATAL [52,2]-[52,20]: Invalid assignment operation
+FATAL [54,12]-[54,23]: Arithmetic operator applied to invalid operand
+FATAL [55,4]-[55,5]: Type of actual does not match type of formal
+FATAL [55,7]-[55,14]: Type of actual does not match type of formal
+FATAL [56,2]-[56,3]: Function call with wrong number of args
+FATAL [57,4]-[57,5]: Type of actual does not match type of formal
+FATAL [58,2]-[58,15]: Invalid assignment operand
+FATAL [58,2]-[58,15]: Invalid assignment operation
+FATAL [59,12]-[59,15]: Attempt to output a class
+FATAL [61,14]-[61,15]: Attempt to assign user input to class
+FATAL [62,14]-[62,15]: Attempt to assign user input to function
+Type Analysis Failed

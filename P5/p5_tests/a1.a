@@ -1,0 +1,65 @@
+ f : (test1:bool, t2: bool) -> int {
+    a:int = -1;
+
+    postInc: bool;
+    a = 5 / postInc;    # should this get invalid assignment?x`
+    if (true == 5) {}    # should this get condition error?
+    postInc++;
+    g: immutable int = 5;
+    g = 4;
+    if (!postInc) {}
+    if(a) {
+    }
+    while (0){}
+    boo: bool = false;
+    return;        # non void return
+}
+
+gg : () -> bool {
+    one: int;
+    two: bool;
+    return one != two;
+}
+
+func : (a:int) -> bool {
+    ont: &int;
+    return eh?;
+}
+
+otherFunc: () -> void {
+    myI: int = "gg";
+    myBoo: bool = true;
+    myI = myBoo;
+    bool4: bool;
+    maybe myI means bool4 otherwise 5;
+}
+x: custom {
+    xMethod : () -> void {
+        return 0;
+    }
+    myInt: int;
+};
+main : () -> int {
+    a:int;
+    # toconsole "Hello world";
+    callArg: int;
+    otherFunc();
+    myX:x;
+    myX->xMethod();
+    toconsole myX->myInt;
+    a();        # non func call
+    a = 1 + callArg();
+    a = 1 + func(5, 6);
+    tooManyArgs: bool;
+    toconsole tooManyArgs + 1;
+    f(a, callArg);        #both arg types wrong
+    f(a, callArg, tooManyArgs);        # too many args
+    f(a, tooManyArgs);        # only one wrong argtype
+    f = otherFunc;        # func assign to each other
+    toconsole myX;        # output class
+    toconsole otherFunc();        
+    fromconsole x;
+    fromconsole f;
+    return 0;
+        # if (myX == myX) {} # seg fault
+}

@@ -1,0 +1,6 @@
+z : () -> void {
+}
+
+f : () -> void {
+	toconsole z;
+}

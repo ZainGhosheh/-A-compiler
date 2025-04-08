@@ -1,0 +1,6 @@
+FATAL [12,11]-[12,12]: Non-lval assignment
+FATAL [13,5]-[13,6]: Non-lval assignment
+FATAL [14,5]-[14,6]: Non-lval assignment
+FATAL [16,17]-[16,18]: Attempt to assign user input to class
+FATAL [17,5]-[17,8]: custom name assignment
+Type Analysis Failed 

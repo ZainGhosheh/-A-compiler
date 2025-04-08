@@ -1,0 +1,22 @@
+f : (a: int, b: bool) -> int {
+
+}
+
+e : () -> void {
+
+}
+
+x : custom {
+
+};
+
+z : () -> void {
+    #x(); # non-function 
+    a:int = 1;
+    b:bool = false;
+    e();
+    f(a, b);
+    f(a);
+    f(b, a);
+    x();
+}
